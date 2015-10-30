@@ -1,0 +1,27 @@
+{
+  "name": "request-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "request-manager.js",
+  "dependencies": {
+    "babel": "6.0.12"
+  },
+  "devDependencies": {
+    "chai": "3.4.0",
+    "mocha": "2.3.3",
+    "sinon": "1.17.2"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha --compilers js:babel/register --recursive ./tests/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scup/request-manager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scup/request-manager/issues"
+  },
+  "homepage": "https://github.com/scup/request-manager#readme"
+}
