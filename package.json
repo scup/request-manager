@@ -4,9 +4,9 @@
   "description": "",
   "main": "request-manager.js",
   "dependencies": {
-    "babel": "6.0.12"
   },
   "devDependencies": {
+    "babel": "5.8.29",
     "chai": "3.4.0",
     "mocha": "2.3.3",
     "sinon": "1.17.2"
