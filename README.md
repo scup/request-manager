@@ -31,7 +31,7 @@ server.get('/', function (request, res, next) {
 ```javascript
 // Request Callback With 
 requestManager.resquestCallback(function(request){
-	var 
+
 	var result = request(url);
 
 	return result;
