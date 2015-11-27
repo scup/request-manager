@@ -37,3 +37,8 @@ requestManager.resquestCallback(function(request){
 	return result;
 });
 ```
+
+## Run
+```javascript
+requestManager.run();
+```

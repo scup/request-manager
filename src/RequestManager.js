@@ -2,19 +2,24 @@ export default class RequestManager{
 
 	constructor(storage) {
 		this.storage = storage;	
+		this.requestExecuter = undefined;
 	}
 
-	register(request) {
+	registerRequest(request) {
 		this.storage.save(request.url);
 	}
 
-	requestCallback(callback) {
-		var url = this.storage.get();
-		
-		callback({ url: url});
+	registerCallback(callback) {		
+		this.requestExecuter = callback;
 	}
 
 	run() {
+		var url = this.storage.get();
+		var cycle = global.setInterval(function(requestExecuter) {
+			this.requestExecuter({url: url});
+			this.requestExecuter({url: url});
+			this.requestExecuter({url: url});
+		}.bind(this), 60000)
 
 	}
 
